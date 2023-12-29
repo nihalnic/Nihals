@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Uses = () => {
-  return (
-    <div>Uses</div>
-  )
-}
+  return <div>Uses</div>;
+};
 
-export default Uses
+export default Uses;

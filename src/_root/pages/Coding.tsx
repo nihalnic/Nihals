@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Coding = () => {
-  return (
-    <div>Coding</div>
-  )
-}
+  return <div>Coding</div>;
+};
 
-export default Coding
+export default Coding;

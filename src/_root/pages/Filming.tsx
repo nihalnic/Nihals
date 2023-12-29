@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Filming = () => {
-  return (
-    <div>Filming</div>
-  )
-}
+  return <div>Filming</div>;
+};
 
-export default Filming
+export default Filming;
