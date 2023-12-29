@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply bg-zinc-900 text-white min-h-screen font-inter;
+  }
+}
+
+@layer utilities {
+  /* TYPOGRAPHY */
+  .h1-bold {
+    @apply text-[52px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .h1-semibold {
+    @apply text-[44px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .h2-bold {
+    @apply text-[30px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .h2-semibold {
+    @apply text-[30px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .h3-bold {
+    @apply text-[24px] font-bold leading-[140%] tracking-tighter;
+  }
+  .h3-regular {
+    @apply text-[19px] font-normal leading-[140%] tracking-tighter;
+  }
+
+  .base-semibold {
+    @apply text-[16px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .base-medium {
+    @apply text-[16px] font-medium leading-[140%];
+  }
+
+  .base-regular {
+    @apply text-[16px] font-normal leading-8;
+  }
+
+  .body-bold {
+    @apply text-[18px] font-bold leading-[140%];
+  }
+
+  .body-medium {
+    @apply text-[18px] font-medium leading-[140%];
+  }
+
+  .small-semibold {
+    @apply text-[14px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .small-medium {
+    @apply text-[14px] font-medium leading-[140%];
+  }
+  .small-regular {
+    @apply text-[14px] font-normal leading-[180%];
+  }
+
+  .small-light {
+    @apply text-[14px] font-light leading-[140%];
+  }
+
+  .subtle-semibold {
+    @apply text-[12px] font-semibold leading-[140%] ;
+  }
+  .subtle-regular {
+    @apply text-[12px] font-normal leading-[140%] ;
+  }
+  .subtle-light {
+    @apply text-[12px] font-light leading-[140%] ;
+  }
+
+  .tiny-light {
+    @apply text-[10px] font-light leading-[140%];
+  }
+
+  /* UTILITIES */
+
+  .invert-white {
+    @apply invert brightness-0 transition;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
+  
+  .common-container {
+    @apply overflow-scroll py-10 px-4 md:px-8 lg:px-[140px];
+  }
+
+  /* Bottom bar */
+  .footer {
+    @apply w-full lg:px-[140px];
+  }
+
+  /* Topbar */
+  .menubar {
+    @apply sticky top-0 z-50 sm:block md:hidden bg-transparent w-full py-6 px-[15px];
+  }
+}
+
+@layer components {
+  /* SHADCN COMPONENTS */
+  /* Form */
+  .shad-input {
+    @apply h-12 bg-zinc-800 border-zinc-500 placeholder:text-zinc-500 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-emerald-500 !important;
+  }
+
+  /* Button */
+  .shad-button_primary {
+    @apply border border-transparent bg-zinc-800 hover:border-zinc-600 transition duration-300 ease-in-out text-light-1 font-light text-sm flex items-center py-[20px] !important;
+  }
+
+  .shad-button_ghost {
+    @apply bg-zinc-600 px-5 text-light-1 flex gap-2 !important;
+  }
+}
